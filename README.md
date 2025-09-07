@@ -9,7 +9,8 @@ ADB를 사용하여 안드로이드 기기의 카메라 셔터음을 무음으�
 
 ## ✨ 시연 (Demonstration)
 
-*(스크립트 실행 예시 이미지)*
+<img src="./demonstration-image/mute-success.png" height="910px" width="520px">
+
 
 <br>
 
@@ -35,7 +36,11 @@ ADB를 사용하여 안드로이드 기기의 카메라 셔터음을 무음으�
 * **운영체제**: Windows 10 이상
 * **필요 조건**: 안드로이드 기기의 **설정 > 개발자 옵션**에서 **USB 디버깅**이 활성화되어 있어야 합니다.
 
+<img src="./demonstration-image/enable-debugging.png" height="330px" width="290px">
+
 <br>
+
+
 
 ## 🤔 문제 해결 (Troubleshooting)
 
@@ -43,7 +48,10 @@ ADB를 사용하여 안드로이드 기기의 카메라 셔터음을 무음으�
 
 A: 스크립트의 안내에 따라 아래 방법을 시도해 보세요.
 1.  핸드폰 화면을 켜서 **'USB 디버깅을 허용하시겠습니까?'** 팝업 창이 있는지 확인하고 '허용'을 누릅니다.
+<img src="./demonstration-image/allow-debugging.png" height="440px" width="250px">
+
 2.  팝업이 없다면, 핸드폰의 **개발자 옵션** 메뉴에서 **USB 디버깅 승인 취소**를 실행한 후, USB 케이블을 뽑았다가 다시 연결하여 팝업이 나타나는지 확인하세요.
+<img src="./demonstration-image/revoke-debugging-auth.png" height="330px" width="290px">
 
 **Q: `.\adb\adb` 관련 오류가 발생합니다.**
 
