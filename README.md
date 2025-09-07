@@ -26,7 +26,7 @@ ADB를 사용하여 안드로이드 기기의 카메라 셔터음을 무음으�
 
 ## 🚀 사용 방법 (Usage)
 
-1.  이 페이지 우측 상단의 **Code** 버튼을 누르고 **Download ZIP**을 클릭하여 압축 파일을 받습니다.
+1.  이 페이지 우측 상단의 **Code** 버튼을 누르고 [**Download ZIP**](https://github.com/rogi-rogi/android-camera-mute/archive/refs/heads/main.zip)을 클릭하여 압축 파일을 받습니다.
 2.  받은 압축 파일의 압축을 풉니다.
 3.  **압축을 푼 폴더 안으로 직접 들어가서**, `run.ps1` 파일에 마우스 오른쪽 클릭 후 **PowerShell에서 실행**을 선택합니다.
 
