@@ -20,6 +20,8 @@ if ($adbOutput.Trim() -eq "List of devices attached") {
     Write-Host ""
     Write-Host "[ERROR!] No Android device is connected to the PC." -ForegroundColor Red
     Write-Host "       Please connect your device with a USB cable first." -ForegroundColor White
+    $killOutput = (.\adb\adb kill-server 2>&1) | ForEach-Object { $_.ToString() } | Out-String
+    Write-Host $killOutput.TrimEnd() -ForegroundColor DarkGray
     Read-Host -Prompt "Press Enter to exit."
     exit
 }
@@ -76,4 +78,5 @@ Write-Host "[DONE] All tasks have been completed successfully." -ForegroundColor
 Write-Host ""
 Write-Host "==========================================================" -ForegroundColor White
 Write-Host ""
+
 Read-Host -Prompt "Press Enter to exit."
