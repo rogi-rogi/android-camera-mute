@@ -2,6 +2,8 @@
 
 ![PowerShell](https://img.shields.io/badge/PowerShell-Script-blue?logo=powershell&logoColor=white)
 ![ADB](https://img.shields.io/badge/ADB-Android_Tools-a4c639?logo=android&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 ADB를 사용하여 안드로이드 기기의 카메라 셔터음을 무음으로 설정하는 PowerShell 스크립트입니다. 필요한 ADB 도구가 함께 포함되어 있어 별도의 설치 없이 바로 사용할 수 있습니다.
 
@@ -16,10 +18,9 @@ ADB를 사용하여 안드로이드 기기의 카메라 셔터음을 무음으�
 
 ## ⭐️ 주요 기능
 
-* USB 디버깅이 활성화된 기기 연결을 자동으로 감지합니다.
-* 기기 권한이 없는 경우(unauthorized) 문제 해결을 위한 안내를 제공합니다.
-* ADB 서버가 응답하지 않을 경우 자동으로 재시작합니다.
-* 가독성을 높이기 위해 진행 단계와 실행 결과를 색상으로 구분하여 보여줍니다.
+* 안드로이드 기기의 카메라 셔터음을 무음으로 설정합니다.
+* 별도의 ADB(Android Debug Bridge) 설치 없이 즉시 사용 가능합니다.
+* 기기 연결 및 인증 오류를 자동으로 감지하고 해결 방법을 안내합니다.
 
 <br>
 
