@@ -13,7 +13,7 @@ ADB를 사용하여 안드로이드 기기의 카메라 셔터음을 무음으�
 
 ## ✨ 시연 (Demonstration)
 
-<img src="./demonstration-image/mute-success.png" height="910px" width="520px">
+<img src="./demonstration-image/mute-success.png" height="565" width="1237">
 
 
 <br>
@@ -69,7 +69,7 @@ ADB를 사용하여 안드로이드 기기의 카메라 셔터음을 무음으�
 5.  **`설정`** 초기 화면으로 돌아가면, 최하단에 **`개발자 옵션`** 메뉴가 새로 생긴 것을 확인할 수 있습니다.
 6.  **`개발자 옵션`**에 들어가 **`USB 디버깅`**을 찾아 활성화(ON)합니다.
 
-<img src="./demonstration-image/enable-debugging.png" height="330px" width="290px">
+<img src="./demonstration-image/enable-debugging.png" height="572" width="663">
 
 <br>
 
