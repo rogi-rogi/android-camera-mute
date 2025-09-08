@@ -1,11 +1,13 @@
 # 🤫 Android Camera Mute
 
-![PowerShell](https://img.shields.io/badge/PowerShell-Script-blue?logo=powershell&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-PowerShell-blue?logo=windows&logoColor=white)
+![macOS](https://img.shields.io/badge/macOS-Shell_Script-blue?logo=apple&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-Shell_Script-orange?logo=linux&logoColor=white)
 ![ADB](https://img.shields.io/badge/ADB-Android_Tools-a4c639?logo=android&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
-ADB를 사용하여 안드로이드 기기의 카메라 셔터음을 무음으로 설정하는 PowerShell 스크립트입니다. 필요한 ADB 도구가 함께 포함되어 있어 별도의 설치 없이 바로 사용할 수 있습니다.
+ADB를 사용하여 안드로이드 기기의 카메라 셔터음을 무음으로 설정하는 스크립트입니다. Windows, macOS, Linux 환경을 모두 지원하며, 필요한 ADB 도구가 포함되어 있어 별도의 설치 없이 바로 사용할 수 있습니다.
 
 <br>
 
@@ -16,26 +18,56 @@ ADB를 사용하여 안드로이드 기기의 카메라 셔터음을 무음으�
 
 <br>
 
-## ⭐️ 주요 기능
+## ✨ 주요 기능
 
-* 안드로이드 기기의 카메라 셔터음을 무음으로 설정합니다.
-* 별도의 ADB(Android Debug Bridge) 설치 없이 즉시 사용 가능합니다.
-* 기기 연결 및 인증 오류를 자동으로 감지하고 해결 방법을 안내합니다.
+이 스크립트는 복잡한 과정 없이 안드로이드 기기의 카메라 셔터음을 비활성화하도록 돕습니다.
+
+* **원클릭 실행**: 연결된 안드로이드 기기의 카메라 셔터음을 **명령어 한 줄 없이** 무음으로 설정합니다.
+* **'무음' 옵션 활성화**: 일부 기기에서 비활성화된 **'무음' 옵션을 시스템 설정 변경을 통해 활성화**합니다.
+* **ADB 도구 포함**: 스크립트 실행에 필요한 **ADB 도구가 포함**되어 있어 사용자가 별도로 설치할 필요가 없습니다.
+* **상태 확인 및 안내**: 기기 연결, 인증 상태 등 각 단계를 확인하며 진행 상황을 친절하게 안내합니다.
 
 <br>
 
 ## 🚀 사용 방법 (Usage)
 
-1.  이 페이지 우측 상단의 **Code** 버튼을 누르고 [**Download ZIP**](https://github.com/rogi-rogi/android-camera-mute/archive/refs/heads/main.zip)을 클릭하여 압축 파일을 받습니다.
-2.  받은 압축 파일의 압축을 풉니다.
-3.  **압축을 푼 폴더 안으로 직접 들어가서**, `run.ps1` 파일에 마우스 오른쪽 클릭 후 **PowerShell에서 실행**을 선택합니다.
+먼저, 페이지 우측 상단의 **Code** 버튼을 누르고 **Download ZIP**을 클릭하여 프로젝트 파일을 다운로드하고 압축을 풉니다.
+
+### **Windows**
+
+1.  압축을 푼 폴더 안으로 들어갑니다.
+2.  `run.ps1` 파일에 마우스 오른쪽 버튼을 클릭합니다.
+3.  **PowerShell에서 실행**을 선택합니다.
+
+### **macOS / Linux**
+
+1.  압축을 푼 폴더에서 터미널을 엽니다.
+2.  아래 명령어를 입력하여 스크립트에 실행 권한을 부여합니다.
+    ```sh
+    chmod +x run.sh
+    ```
+3.  아래 명령어로 스크립트를 실행합니다.
+    ```sh
+    ./run.sh
+    ```
 
 <br>
 
 ## ✅ 요구 사항 (Prerequisites)
 
-* **운영체제**: Windows 10 이상
+* **운영체제**: Windows, macOS, Linux
 * **필요 조건**: 안드로이드 기기의 **설정 > 개발자 옵션**에서 **USB 디버깅**이 활성화되어 있어야 합니다.
+
+### 💡 개발자 옵션 및 USB 디버깅 활성화 방법
+
+만약 '개발자 옵션' 메뉴가 보이지 않는다면, 아래 순서에 따라 직접 활성화할 수 있습니다. (기기 제조사마다 메뉴 이름은 약간 다를 수 있습니다.)
+
+1.  **`설정`** 앱을 열고 가장 아래로 내려 **`휴대전화 정보`**로 들어갑니다.
+2.  **`소프트웨어 정보`**를 선택합니다.
+3.  **`빌드번호`** 항목을 **7번 연속으로 빠르게 터치**합니다. (터치할 때마다 남은 횟수가 표시됩니다.)
+4.  "개발 설정이 완료되었습니다" 또는 "개발자가 되셨습니다" 라는 메시지가 나타나면 성공입니다.
+5.  **`설정`** 초기 화면으로 돌아가면, 최하단에 **`개발자 옵션`** 메뉴가 새로 생긴 것을 확인할 수 있습니다.
+6.  **`개발자 옵션`**에 들어가 **`USB 디버깅`**을 찾아 활성화(ON)합니다.
 
 <img src="./demonstration-image/enable-debugging.png" height="330px" width="290px">
 
@@ -57,6 +89,10 @@ A: 스크립트의 안내에 따라 아래 방법을 시도해 보세요.
 **Q: `.\adb\adb` 관련 오류가 발생합니다.**
 
 A: `run.ps1` 스크립트와 `adb` 폴더가 같은 위치에 있는지 확인해주세요. 압축을 푼 폴더 구조를 그대로 유지해야 합니다.
+
+**Q: macOS/Linux에서 `./run.sh` 실행 시 `Permission denied` 오류가 발생합니다.**
+
+A: 스크립트 파일에 실행 권한이 없기 때문입니다. 터미널에서 `chmod +x run.sh` 명령어를 실행하여 권한을 부여한 후 다시 시도해주세요.
 
 **Q: 왜 EXE 프로그램이 아닌 PowerShell 스크립트인가요?**
 
