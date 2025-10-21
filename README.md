@@ -1,4 +1,4 @@
-# 🤫 Android Camera Mute
+# 🤫 Camera Mute
 
 ![Windows](https://img.shields.io/badge/Windows-PowerShell-blue?logo=windows&logoColor=white)
 ![macOS](https://img.shields.io/badge/macOS-Shell_Script-blue?logo=apple&logoColor=white)
