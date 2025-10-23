@@ -1,4 +1,4 @@
-# 🤫 Camera Mute
+# 🤫 Android Camera Mute
 
 ![Windows](https://img.shields.io/badge/Windows-PowerShell-blue?logo=windows&logoColor=white)
 ![macOS](https://img.shields.io/badge/macOS-Shell_Script-blue?logo=apple&logoColor=white)
@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
-ADB를 사용하여 안드로이드 기기의 카메라 셔터음을 무음으로 설정하는 스크립트입니다. Windows, macOS, Linux 환경을 모두 지원하며, 필요한 ADB 도구가 포함되어 있어 별도의 설치 없이 바로 사용할 수 있습니다.
+ADB를 사용하여 **안드로이드 기기**의 카메라 셔터음을 무음으로 설정하는 스크립트입니다. Windows, macOS, Linux 환경에서 실행 가능하며, 필요한 ADB 도구가 포함되어 있어 별도의 설치 없이 바로 사용할 수 있습니다.
 
 <br>
 
